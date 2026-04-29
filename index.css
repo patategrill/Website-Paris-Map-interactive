@@ -1,0 +1,22 @@
+body{
+    background-color: #2b2a21;
+    color: #eaf0a8;
+}
+
+.colonne_droite{
+    text-align: right;
+}
+
+.sidebardiv{
+    width: 200px;
+    height: 50vh;
+    background-color: aliceblue;
+    right: 0;
+    position: fixed;
+    color: #2b2a21;
+
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
