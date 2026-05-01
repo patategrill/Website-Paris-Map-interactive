@@ -7,7 +7,7 @@ body{
     text-align: left;
 }
 
-.sidebardiv{
+.sidebar1{
     width: 200px;
     height: 50vh;
     background-color: aliceblue;
@@ -25,12 +25,8 @@ body{
     margin-right: 1%;
 }
 
-/*.sidebar{
-    margin-left: 1075%;
-}*/
-
-/* faudra changer les couleurs parce qu'elles laissent a désirer */
-
 .sidebar2{
-    margin-left: -995%;
-}       
+    display: flex;
+    position: fixed;
+    top: 50%;
+}
