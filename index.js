@@ -26,11 +26,11 @@ zoom.addEventListener("click", function zoomIn() {
 }); //*ajout d'un événement de clic pour zoomer sur l'image du plan de Paris
 
 
-if ('Mouse position: (${x}, ${y})' === 'Mouse position: (809, 538)') { //si la position de la souris est égale à celle de Notre Dame de Paris, alors afficher les informations sur Notre Dame de Paris
+/*if ('Mouse position: (${x}, ${y})' === 'Mouse position: (809, 538)') { //si la position de la souris est égale à celle de Notre Dame de Paris, alors afficher les informations sur Notre Dame de Paris
     if ('MouseEvent.click'){
         sidebar.innerHTML(Notre_dame_de_paris);
     }
-}
+}*/
 
 const closewindow = document.querySelector(".closewindow"); //*sélection de l'élément avec la classe "closewindow" pour fermer la fenêtre d'information*
 closewindow.addEventListener("click", function() {
