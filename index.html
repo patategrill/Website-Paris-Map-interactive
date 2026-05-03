@@ -10,7 +10,7 @@
     <body>
         <div class="sidebar1">
            <aside> <!--sidebar principale-->
-               <button class="return">&larr;</button>
+                <button class="return">&larr;</button>
                 <button class="closewindow">&times;</button> <!--bouton pour fermer la fenêtre d'information-->
                     <h2>Ajouter titre et date <br> ou monuments</h2>
                     <div id="content">
@@ -28,14 +28,23 @@
             </aside>
         </div>
         <h1>Site Web interactif retracant l'histoire de Paris et de ses monuments</h1>
-        <script src="index.js"></script>
+        
             <p>
                 texte aleatoire pour remplir la colonne de droite du site, qui contiendra des informations sur les monuments parisiens,
                 des liens vers des articles, des photos, etc.
             </p>
             
         </div>
+
+        <map name="Paris1790">
+            <area shape="rect" coords="1111,793,1141,816" href="#" onclick='TextSidebar("Notre_Dame_de_Paris")' alt="Notre-Dame de Paris"> 
+            <!-- y'a un probleme à régler. je me suis aidé de cette vidéo : https://www.youtube.com/watch?v=ORHPaHhgPRk elle est vachement bien mais y a pas mal de choses à changer, peut-etre par exemple mettre l'image via html et pas via js-->
+        </map>
+
+        <script src="index.js"></script>
+
     </body>
+
 </html>
 
 <!-- bloghugo.ovh -->
