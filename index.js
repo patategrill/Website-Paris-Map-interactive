@@ -20,7 +20,6 @@ zoomin.addEventListener("click",  (zoomin) => {
 }); 
 
 zoomout.addEventListener("click",  (zoomout) => {
-
     image.style.transform = "scale(0.5)";
 }); 
 
