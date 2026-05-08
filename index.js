@@ -8,7 +8,6 @@ plan.addEventListener("mousemove", (event) => {
 });
 
 
-
 const image = document.getElementById("image");
 const zoomin = document.querySelector(".zoomin");
 const zoomout = document.querySelector(".zoomout");
