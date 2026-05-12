@@ -63,6 +63,10 @@ function TextSidebar(section) {
         content.innerText = ""
     }
 
+    if (section == "Panthéon") {
+        content.innerText = ""
+    }
+
     if (section == "Palais_royal") {
         content.innerText = ""
     }
@@ -71,7 +75,7 @@ function TextSidebar(section) {
         content.innerText = ""
     }
 
-    if (section == "Palais du luxembourg") {
+    if (section == "Palais_du_luxembourg") {
         content.innerText = ""
     }
 
