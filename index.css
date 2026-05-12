@@ -63,3 +63,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+#image{
+    cursor: grab;
+}
+
+
+#image:active{
+    cursor: grabbing;
+}
