@@ -79,3 +79,22 @@ function TextSidebar(section) {
         content.innerText = ""
     }
 }
+
+let positionX = 0;
+let positionY = 0;
+
+
+function UpdateCursor() {
+    
+    image.style.transform = `translate(${positionX}px, ${positionY}px) scale(${Scale})`;
+
+    if (Scale > 1) {
+        image-container.classList.add("zoomed");
+    } else {
+        image-container.classList.remove("zoomed");
+    }
+
+    positionX = 0;
+    positionY = 0;
+    
+}
