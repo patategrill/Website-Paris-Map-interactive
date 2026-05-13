@@ -16,18 +16,33 @@ const resetzoom = document.querySelector(".resetzoom");
 let Scale = 1;
 
 zoomin.addEventListener("click",  (zoomin) => {
-    Scale += 0.1;
+    Scale += 0.25;
+    image.style.transition = "transform 0.5s ease-out";
+    
+    if (Scale >= 2.5) {
+        Scale += 0.5
+    }
+
     image.style.transform = `scale(${Scale})`;
+
 }); 
 
 zoomout.addEventListener("click",  (zoomout) => {
-    Scale -= 0.1;
+    Scale -= 0.25;
+    
+    if (Scale < 0.75) {
+        Scale = 0.75
+    }
+
+    image.style.transition = "transform 0.3s ease-out";
+
     image.style.transform = `scale(${Scale})`;
 }); 
 
 resetzoom.addEventListener("click",  (resetzoom) => {
     image.style.transform = "scale(1)";
     Scale = 1;
+    image.style.transition = "transform 0.5s ease-out";
 }); 
 
 
@@ -81,6 +96,10 @@ function TextSidebar(section) {
 
     if (section == "Place_de_la_revolution") {
         content.innerText = ""
+    }
+    
+     if (section == "Palais_des_tuileries") {
+        content.innerText = "Le palais des Tuileries fut l’une des grandes résidences royales et impériales de France. Il a été construit à partir de 1564 sur ordre de Catherine de Médicis, à l’emplacement d’une ancienne fabrique de tuiles datant de 1372, d'où son nom.  Le terrain appartenait auparavant à l’hôtel des Tournelles, détruit en 1563 par Charles IX. Le projet initial, conçu notamment par Philibert Delorme, prévoyait un vaste ensemble composé de deux bâtiments parallèles reliés par quatre ailes, formant trois cours intérieures. Seule la partie occidentale fut finalement réalisée.  Le palais s'ouvrait sur un grand jardin à l'italienne, qui deviendra le jardin des Tuileries. Au fil des siècles, de nombreux architectes — Bullant, Androuet du Cerceau, Le Vau, Soufflot, Gabriel, Percier et Fontaine, puis Lefuel — l’agrandirent et le transformèrent.  En 1857, il est réuni au Louvre, formant un immense ensemble de près de 328 mètres de long avec les pavillons de Flore et de Marsan, qui existent toujours. Les Tuileries deviennent alors un centre politique majeur, résidence des rois et des empereurs, mais aussi siège de la Première République et du Consulat sous Bonaparte. Le palais se distingue par son pavillon central coiffé d’un dôme et par son escalier suspendu, une prouesse architecturale de la Renaissance. Après la fuite de la famille royale à Varennes, le 21 juin 1791, les révolutionnaires décident de le retenir au Palais des Tuileries, afin de prévenir toute autre fuite, déjà vu par la plupart comme un acte de trahison du Roi. Le 23 mai 1871, pendant la Commune de Paris, le palais est incendié volontairement par les communards Bergeret, Bénot et Boudin.  Les ruines demeurent sur place pendant plus de dix ans, puis sont démolies en 1883, laissant place à l’actuel jardin des Tuileries."
     }
 }
 
