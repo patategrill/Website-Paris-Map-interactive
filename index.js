@@ -121,3 +121,7 @@ function UpdateCursor() {
     positionY = 0;
     
 }
+
+content.addEventListener("click",  (content) => {
+    content.style.size = "100%";
+});
