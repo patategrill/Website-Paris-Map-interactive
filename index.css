@@ -72,3 +72,18 @@ body{
 #image:active{
     cursor: grabbing;
 }
+
+.container{
+    position: fixed;
+    display : flex;
+    justify-content : center;
+    background-color: #2b2a21;
+    margin-top: -84px;
+}
+
+header{
+    background-color: #2b2a21;
+    margin-top: 50px;
+    color: #2b2a21;
+}   
+
