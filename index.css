@@ -54,7 +54,6 @@ body{
     transition: 0.3s ease;
 }
 
-
 .sidebar1 a:hover{
     background-color: #F0D9B6;
     color: #2b2a21;
@@ -70,7 +69,6 @@ body{
 #image{
     cursor: grab;
 }
-
 
 #image:active{
     cursor: grabbing;
