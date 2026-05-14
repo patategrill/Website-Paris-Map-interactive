@@ -125,3 +125,17 @@ function UpdateCursor() {
 content.addEventListener("click",  (content) => {
     content.style.size = "100%";
 });
+
+const sidebar = document.getElementById("sidebar");
+
+document.addEventListener("mousemove", (e) => {
+
+    const distanceRight = window.innerWidth - e.clientX; 
+
+    if (distanceRight < 265) {
+        sidebar.classList.add("show");
+    } else {
+        sidebar.classList.remove("show");
+    }
+
+});
