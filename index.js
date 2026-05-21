@@ -8,6 +8,7 @@ plan.addEventListener("mousemove", (event) => {
 });
 
 
+
 const image = document.getElementById("image");
 const zoomin = document.querySelector(".zoomin");
 const zoomout = document.querySelector(".zoomout");
@@ -21,6 +22,14 @@ zoomin.addEventListener("click",  (zoomin) => {
     
     if (Scale >= 2.5) {
         Scale += 0.5
+    }
+
+    if (Scale >= 5) {
+        Scale += 1.75
+    }
+
+    if (Scale >= 10) {
+        Scale += 2.5
     }
 
     image.style.transform = `scale(${Scale})`;
@@ -139,3 +148,5 @@ document.addEventListener("mousemove", (e) => {
     }
 
 });
+
+$('img[usemap]').rwdImageMaps();
